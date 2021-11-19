@@ -6,7 +6,7 @@ namespace SingletonPattern
     /// <summary>
     /// Socket Connection (Singleton Pattern)
     /// </summary>
-    class SocketConnection
+     class SocketConnection
     {
         private SocketConnection()
         {

@@ -39,14 +39,14 @@ namespace SingletonPattern
             // 
             // txtIPAddress
             // 
-            this.txtIPAddress.Location = new System.Drawing.Point(338, 124);
+            this.txtIPAddress.Location = new System.Drawing.Point(356, 124);
             this.txtIPAddress.Name = "txtIPAddress";
             this.txtIPAddress.Size = new System.Drawing.Size(150, 20);
             this.txtIPAddress.TabIndex = 0;
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(338, 162);
+            this.txtPort.Location = new System.Drawing.Point(356, 162);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(150, 20);
             this.txtPort.TabIndex = 1;
@@ -54,7 +54,7 @@ namespace SingletonPattern
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(272, 128);
+            this.label1.Location = new System.Drawing.Point(290, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 2;
@@ -63,7 +63,7 @@ namespace SingletonPattern
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(272, 166);
+            this.label2.Location = new System.Drawing.Point(290, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 3;
@@ -72,15 +72,14 @@ namespace SingletonPattern
             // lblConnectionStatus
             // 
             this.lblConnectionStatus.AutoSize = true;
-            this.lblConnectionStatus.Location = new System.Drawing.Point(335, 262);
+            this.lblConnectionStatus.Location = new System.Drawing.Point(330, 262);
             this.lblConnectionStatus.Name = "lblConnectionStatus";
-            this.lblConnectionStatus.Size = new System.Drawing.Size(35, 13);
+            this.lblConnectionStatus.Size = new System.Drawing.Size(0, 13);
             this.lblConnectionStatus.TabIndex = 4;
-            this.lblConnectionStatus.Text = "label3";
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(413, 210);
+            this.btnConnect.Location = new System.Drawing.Point(431, 210);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(75, 23);
             this.btnConnect.TabIndex = 5;
@@ -92,6 +91,7 @@ namespace SingletonPattern
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.lblConnectionStatus);
@@ -99,6 +99,7 @@ namespace SingletonPattern
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.txtIPAddress);
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

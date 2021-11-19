@@ -13,14 +13,21 @@ namespace SingletonPattern
 
         private void btnConnect_Click(object sender, System.EventArgs e)
         {
-            Socket client = SocketConnection.GetClient(txtIPAddress.Text.ToString(), Convert.ToInt32(txtPort.Text));
-            if (client.Connected)
+            try
             {
-                lblConnectionStatus.Text = "Connection Started...";
+                Socket client = SocketConnection.GetClient(txtIPAddress.Text.ToString(), Convert.ToInt32(txtPort.Text));
+                if (client.Connected)
+                {
+                    lblConnectionStatus.Text = "Connection Started...";
+                }
+                else
+                {
+                    lblConnectionStatus.Text = "An error occurred while connecting";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                lblConnectionStatus.Text = "An error occurred while connecting";
+                lblConnectionStatus.Text = ex.Message.ToString();
             }
         }
     }
